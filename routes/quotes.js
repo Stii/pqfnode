@@ -11,7 +11,7 @@ exports.index = function(req, res){
             console.log(quote.quote);
             var q = quote.quote.replace(/\n\n/g, '<br />');
             q = q.replace(/\ \-\ /g, '<br />- ');
-            res.render('quotes', { title: "Pratchett Wisdom", quote: q, source: quote.source });
+            res.render('quotes', { title: "Pratchett Wisdom", quote: q, source: quote.source, number: quote.number });
         }
     );
 }

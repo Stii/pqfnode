@@ -29,6 +29,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/about', routes.about);
 app.get('/pqf', quotes.index);
 app.get('/pqf/:number', quotes.show);
 

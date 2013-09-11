@@ -39,5 +39,9 @@ exports.show = function(req, res){
  */
 
 exports.index = function(req, res){
-    res.render('index', { title: "About Stii" });
+    res.render('index', { title: "Stii" });
+}
+
+exports.about = function(req, res){
+    res.render('about', { title: "About Stii" });
 }

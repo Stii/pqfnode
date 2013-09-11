@@ -1,178 +1,94 @@
 html { 
-  background: url(/images/tp.jpg) no-repeat center center fixed; 
+  background: url(/images/tp4.jpg) no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-@media (min-width: 980px) { 
-    body { 
-        font-size:150%; line-height: 110%; color: #CDCDC1; font-family: 'Peralta', cursive; 
-        background: black;
-        margin: 0;
-        padding: 0;
-    } 
-    #pqf {
-        margin: 30px;
-        width: 40%;
-        height: 80%;
-        float: right;
-        overflow: hidden;
-    }
-    #pqf p {
-        text-align: right;
-        font-size:60%;
-    }
-    h1 {
-        font-family: 'Gloria Hallelujah', cursive;
-        font-size:200%
-    }
-    p.about {
-        font-family: 'Istok Web', sans-serif;
-        font-size:100%;
-    }
-    #menu {
-        width: 100%;
-        height: 30px;
-        position: absolute;
-        bottom: 0;
-        margin: 0;
-        background: white;
-        opacity:0.3;
-        filter:alpha(opacity=30);
-        padding: 0;
-    }
-    #menu a {
-        color: #1C1C1C;
-        font-size:70%;
-        text-decoration: none;
-        font-family: 'Istok Web', sans-serif;
-        position:absolute;
-        bottom:0%;
-        margin: auto 10px;
-    }
-}
-@media (min-width: 768px) and (max-width: 979px) { 
-    body { 
-        font-size:120%; line-height: 100%; color: #CDCDC1; font-family: 'Peralta', cursive; 
-        background: black;
-        margin: 0;
-        padding: 0;
-    } 
-    #pqf {
-        margin: 30px;
-        width: 40%;
-        height: 80%;
-        float: right;
-        overflow: hidden;
-    }
-    #pqf p {
-        text-align: right;
-        font-size:40%;
-    }
-    #menu {
-        width: 100%;
-        height: 30px;
-        position: absolute;
-        bottom: 0;
-        margin: 0;
-        background: white;
-        opacity:0.3;
-        filter:alpha(opacity=30);
-        padding: 0;
-    }
-    #menu a {
-        color: #1C1C1C;
-        font-size:70%;
-        text-decoration: none;
-        font-family: 'Istok Web', sans-serif;
-        position:absolute;
-        bottom:10%;
-        margin: auto 10px;
-    }
-}
-@media (max-width: 767px) {  
-    body { 
-        font-size:100%; line-height: 100%; color: #CDCDC1; font-family: 'Peralta', cursive; 
-        background: black;
-        margin: 0;
-        padding: 0;
-    } 
-    #pqf {
-        margin: 10px;
-        width: 40%;
-        height: 80%;
-        float: right;
-        overflow: hidden;
-    }
-    #pqf p {
-        text-align: right;
-        font-size:30%;
-    }
-    #menu {
-        width: 100%;
-        height: 30px;
-        position: absolute;
-        bottom: 0;
-        margin: 0;
-        background: white;
-        opacity:0.3;
-        filter:alpha(opacity=30);
-        padding: 0;
-    }
-    #menu a {
-        color: #1C1C1C;
-        font-size:60%;
-        text-decoration: none;
-        font-family: 'Istok Web', sans-serif;
-        position:absolute;
-        bottom:10%;
-        margin: auto 10px;
-    }
+html#stii { 
+  background: url(/images/whiskeyjack.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-@media (max-width: 480px) { 
-    body { 
-        font-size:90%; line-height: 100%; color: #CDCDC1; font-family: 'Peralta', cursive; 
-        background: black;
-        margin: 0;
-        padding: 0;
-    } 
-    #pqf {
-        margin: 10px;
-        width: 40%;
-        height: 80%;
-        float: right;
-        overflow: hidden;
-    }
-    #pqf p {
-        text-align: right;
-        font-size:30%;
-    }
-    #menu {
-        width: 100%;
-        height: 30px;
-        position: absolute;
-        bottom: 0;
-        margin: 0;
-        background: white;
-        opacity:0.3;
-        filter:alpha(opacity=30);
-        padding: 0;
-    }
-    #menu a {
-        color: #1C1C1C;
-        font-size:50%;
-        text-decoration: none;
-        font-family: 'Istok Web', sans-serif;
-        position:absolute;
-        bottom:10%;
-        margin: auto 10px;
-    }
+body { 
+    font-size:150%; line-height: 110%; color: #CDCDC1; font-family: 'Gloria Hallelujah', cursive; 
+    background: black;
+    margin: 0;
+    padding: 0;
+} 
+#pqf {
+    margin: 30px;
+    float: right;
+    overflow: hidden;
 }
-
-
-
-
-
+.normal {
+    width: 40%;
+}
+.wide {
+    width: 60%;
+}
+#pqf p {
+    text-align: right;
+    font-size:60%;
+}
+#pqf a {
+    color: lavenderblush;
+    text-decoration: none;
+}
+#pqf a:hover {
+    color: navajowhite;
+}
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:200%;
+    text-align: right;
+}
+h2,h3,h4 {
+    font-family: 'Istok Web', sans-serif;
+    text-align: right;
+}
+.gloria {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.small-pad {
+    padding: 2px;
+    margin: 5px;
+    line-height: 80%;
+}
+small {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 30%;
+}
+p.istok {
+    font-family: 'Istok Web', sans-serif;
+    font-size:100%;
+}
+#menu {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 50px;
+    margin: 0;
+    background: lavenderblush;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    padding: 0;
+}
+#menu a {
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+    font-size:70%;
+    text-decoration: none;
+    font-family: 'Istok Web', sans-serif;
+    margin: auto 10px;
+}
+#menu a:hover {
+    color: #000;
+}
+div.clear {
+    clear:both;
+}
