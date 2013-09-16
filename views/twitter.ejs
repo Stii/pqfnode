@@ -2,18 +2,33 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/twitter.css' />
+    <link rel='stylesheet' href='/javascripts/chosen/chosen.min.css' />
     <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/javascripts/chosen/chosen.jquery.js"></script>
   </head>
   <body>
-      <div id="pqf" class="normal">
+  <div id="content">
+      <div id="main">
+          <!-- Filters: 
+          <select data-placeholder="Choose tag..." style="width:200px;" name="tag" class="chosen-select">
+            <option value></option>
+            <% for(var i=0; i < tags.length; i++) {%>
+              <option value="<%= tags[i].tag %>"><%= tags[i].tag %></option>
+            <% } %> 
+          </select>
+          <select data-placeholder="Choose person..." style="width:200px; float:right;" name="person" class="chosen-select">
+            <option value></option>
+            <% for(var i=0; i < people.length; i++) {%>
+              <option value="<%= people[i].person %>"><%= people[i].person %></option>
+            <% } %> 
+          </select>-->
           <div>
-              <%- quote %> 
-              <p><%= source %></p>
-              <p class="istok"><a href="/pqf/<%= number %>">link to quote</a><br /> 
-              <a href="/pqf">next random quote</a></p>
+              <% for(var i=0; i < tweets.length; i++) {%>
+              <%- tweets[i].html %>
+              <% } %> 
           </div>
       </div>
       <div id="menu">
@@ -23,6 +38,7 @@
         <a href="/tweets">favorite tweets</a>
         <a href="http://www.twitter.com/stii">follow me</a>
       </div>
+  </div>
   </body>
 <script type="text/javascript">
 
@@ -36,5 +52,9 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+  /*$(document).ready(
+    $(".chosen-select").chosen()
+  );*/
 </script>
 </html>
+

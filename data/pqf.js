@@ -1,11 +1,9 @@
-var mg = require('mongoose');
+var mongoose = require('mongoose');
 
-mg.connect('mongodb://localhost/pqf');
-
-var qtSchema = mg.Schema({
+var qtSchema = mongoose.Schema({
     quote: String,
     source: String,
     number: Number 
 });
 
-module.exports = mg.model('Pqf', qtSchema);
+module.exports = mongoose.model('Pqf', qtSchema);

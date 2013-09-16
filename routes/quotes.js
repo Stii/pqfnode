@@ -7,6 +7,7 @@ exports.index = function(req, res){
     //Get a random quote from mongo
     console.log(req.params.number);
     var randomnumber = Math.floor(Math.random()*676)
+    console.log(pqf);
     pqf.findOne({number: randomnumber}, function(error, quote) {
             console.log(quote.quote);
             var q = quote.quote.replace(/\n\n/g, '<br />');

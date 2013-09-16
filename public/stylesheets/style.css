@@ -14,6 +14,14 @@ html#stii {
   background-size: cover;
 }
 
+html#tvitter { 
+  background: url(/images/twitter5.jpg) no-repeat bottom center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body { 
     font-size:150%; line-height: 110%; color: #CDCDC1; font-family: 'Gloria Hallelujah', cursive; 
     background: black;
